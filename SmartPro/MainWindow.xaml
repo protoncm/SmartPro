@@ -1,0 +1,53 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="Smart Pro." Height="500" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+        <Menu x:Name="mainMenu" Grid.ColumnSpan="2">
+            <Menu.Items>
+                <MenuItem Header="File">
+                    <MenuItem.Items>
+                        <MenuItem Header="Load"/>
+                        <MenuItem Header="Save"/>
+                        <MenuItem Header="Close Program"/>
+                    </MenuItem.Items>
+                </MenuItem>
+                <MenuItem Header="About"/>
+            </Menu.Items>
+        </Menu>
+        <Grid Grid.Column="0" Grid.Row="1" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="button" Content="Start" Margin="0,5" Click="start_click" IsEnabled="{Binding IsStartButtonEnaled}"/>
+            <Button x:Name="btnPause" Content="{Binding PauseButtonText}" Margin="0,5" Click="pauseOrResume_Click" IsEnabled="{Binding IsPauseButtonEnaled}" Grid.Row="1"/>
+            <Button x:Name="button1" Content="Stop" Margin="0,5" Click="stop_Click" IsEnabled="{Binding IsStopButtonEnaled}" Grid.Row="2"/>
+            <Button x:Name="btnSettings" Content="Settings" Margin="0,5" Click="settings_Click" IsEnabled="{Binding IsSettingsButtonEnaled}" Grid.Row="3"/>
+        </Grid>
+        <RichTextBox x:Name="richTextBox" Grid.Row="1" Grid.Column="1" Margin="0,10,5,10">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text=""/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <StatusBar Grid.Row="2" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
