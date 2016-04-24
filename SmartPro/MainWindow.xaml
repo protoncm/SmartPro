@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1"
         mc:Ignorable="d"
-        Title="Smart Pro." Height="500" Width="500">
+        Title="Smart Pro." Height="500" Width="500"
+        Style="{StaticResource cm-window}">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="60"/>
@@ -44,7 +45,7 @@
         <RichTextBox x:Name="richTextBox" Grid.Row="1" Grid.Column="1" Margin="0,10,5,10">
             <FlowDocument>
                 <Paragraph>
-                    <Run Text=""/>
+                    <Run Text="here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
