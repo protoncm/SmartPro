@@ -5,16 +5,40 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartPro", "SmartPro\SmartPro.csproj", "{5056FBB5-CE33-453C-84F7-5BEDC83BC123}"
 EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "SmartPro.Setup", "SmartPro.Setup\SmartPro.Setup.isproj", "{0DA60FB2-A906-4FBA-895C-9E477A93033E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5056FBB5-CE33-453C-84F7-5BEDC83BC123} = {5056FBB5-CE33-453C-84F7-5BEDC83BC123}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
 		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
 		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5056FBB5-CE33-453C-84F7-5BEDC83BC123}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{5056FBB5-CE33-453C-84F7-5BEDC83BC123}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
 		{5056FBB5-CE33-453C-84F7-5BEDC83BC123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5056FBB5-CE33-453C-84F7-5BEDC83BC123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5056FBB5-CE33-453C-84F7-5BEDC83BC123}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{5056FBB5-CE33-453C-84F7-5BEDC83BC123}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
 		{5056FBB5-CE33-453C-84F7-5BEDC83BC123}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5056FBB5-CE33-453C-84F7-5BEDC83BC123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5056FBB5-CE33-453C-84F7-5BEDC83BC123}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{5056FBB5-CE33-453C-84F7-5BEDC83BC123}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{0DA60FB2-A906-4FBA-895C-9E477A93033E}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{0DA60FB2-A906-4FBA-895C-9E477A93033E}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{0DA60FB2-A906-4FBA-895C-9E477A93033E}.Debug|Any CPU.ActiveCfg = DVD-5
+		{0DA60FB2-A906-4FBA-895C-9E477A93033E}.Debug|Any CPU.Build.0 = DVD-5
+		{0DA60FB2-A906-4FBA-895C-9E477A93033E}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{0DA60FB2-A906-4FBA-895C-9E477A93033E}.DVD-5|Any CPU.Build.0 = DVD-5
+		{0DA60FB2-A906-4FBA-895C-9E477A93033E}.Release|Any CPU.ActiveCfg = SingleImage
+		{0DA60FB2-A906-4FBA-895C-9E477A93033E}.Release|Any CPU.Build.0 = SingleImage
+		{0DA60FB2-A906-4FBA-895C-9E477A93033E}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{0DA60FB2-A906-4FBA-895C-9E477A93033E}.SingleImage|Any CPU.Build.0 = SingleImage
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
